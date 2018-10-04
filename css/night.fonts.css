@@ -1,0 +1,39 @@
+.icon.nightweb {
+	background: url(../images/icons/nightweb.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 4px;
+}
+
+.icon.map {
+	background: url(../images/icons/map.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 4px;
+}
+
+.icon.email {
+	background: url(../images/icons/email.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 4px;
+}
+
+.icon.link {
+	background: url(../images/icons/link.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 4px;
+}

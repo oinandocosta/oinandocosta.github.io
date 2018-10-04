@@ -1,0 +1,401 @@
+/*!
+ * Profile GitHub Night Web
+ * Designer & Programmer by Night Web (www.nightweb.com.br)
+ */
+ 
+@import 'night.fonts.css';
+ 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+/* ========== GENERAL STYLE ========== */
+
+html {
+	background-image: url(../images/bg.jpg);
+	background-position: top center;
+	background-size: cover;
+}
+
+body {
+	background: radial-gradient(rgba(0,0,78,0.4), rgba(0,0,78,0.8));
+	background: -webkit-radial-gradient(rgba(0,0,78,0.4), rgba(0,0,78,0.8));
+	background: -moz-radial-gradient(rgba(0,0,78,0.4), rgba(0,0,78,0.8));
+	background: -o-radial-gradient(rgba(0,0,78,0.4), rgba(0,0,78,0.8));
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #FFF;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.25);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/* ========== LANGUAGE STYLE ========== */
+
+.lang {
+	float: left;
+	margin-right: 8px;
+}
+
+.lang > .icon {
+	background: #444;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	float: left;
+}
+
+.lang > text {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+	float: left;
+	margin-top: -4px;
+	margin-left: 3px;
+}
+
+/* -- Language PHP -- */
+
+.lang.php > .icon {
+	background: #4F5D95;
+}
+
+.lang.php > text {
+	color: #4F5D95;
+}
+
+/* -- Language HTML5 -- */
+
+.lang.html5 > .icon {
+	background: #E34C26;
+}
+
+.lang.html5 > text {
+	color: #E34C26;
+}
+
+/* -- Language JavaScript -- */
+
+.lang.javascript > .icon {
+	background: #36D900;
+}
+
+.lang.javascript > text {
+	color: #36D900;
+}
+
+/* ========== ALL STYLE ========== */
+
+.logotipo {
+	position: absolute;
+	background: url(../images/logotipo.png);
+	width: 199px;
+	height: 25px;
+	float: left;
+	left: 20px;
+	bottom: 20px;
+	transition: 0.3s;
+}
+
+.logotipo:hover {
+	bottom: 23px;
+}
+
+.footer {
+	position: absolute;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: right;
+	float: right;
+	right: 20px;
+	bottom: 20px;
+}
+
+.general {
+	position: relative;
+	width: 980px;
+}
+
+.sidebar {
+	width: 228px;
+	float: left;
+}
+
+.sidebar > .avatar {
+	background: #FFF;
+	width: 228px;
+	height: 228px;
+	float: left;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidebar > .avatar img {
+	width: 212px;
+	height: 212px;
+	border-radius: 5px;
+}
+
+.sidebar > .title {
+	width: 100%;
+	float: left;
+	padding: 0 7px;
+}
+
+.sidebar > .title > .name {
+	width: 100%;
+	float: left;
+	font-size: 22px;
+	font-weight: 400;
+	text-align: left;
+	margin-top: 20px;
+	color: #FFF;
+}
+
+.sidebar > .title > .desc {
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	color: #FFF;
+	padding-top: 2px;
+}
+
+.sidebar > .title:after {
+	content: "";
+	position: relative;
+	background: linear-gradient(to left, transparent, rgba(255,255,255,0.5), transparent);
+	background: -webkit-linear-gradient(to left, transparent, rgba(255,255,255,0.5), transparent);
+	background: -moz-linear-gradient(to left, transparent, rgba(255,255,255,0.5), transparent);
+	background: -o-linear-gradient(to left, transparent, rgba(255,255,255,0.5), transparent);
+	width: 100%;
+	height: 1px;
+	float: left;
+	margin: 14px 0;
+}
+
+.sidebar > .info {
+	width: 100%;
+	float: left;
+	padding: 0 7px;
+}
+
+.sidebar > .info > ul {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	color: #FFF;
+}
+
+.sidebar > .info > ul > li {
+	width: 100%;
+	float: left;
+	margin-bottom: 12px;
+}
+
+.sidebar > .info > ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.content {
+	width: calc(100% - 228px);
+	float: left;
+}
+
+.content > .title {
+	width: 100%;
+	float: left;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	color: #FFF;
+	margin-bottom: 35px;
+}
+
+
+.content > .body {
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+}
+
+.content .timeline {
+	position: relative;
+	width: 667px;
+	float: left;
+}
+
+.content .timeline:before {
+	content: "";
+	position: absolute;
+	background: #00014F;
+	width: 1px;
+	height: calc(100% - 30px);
+	float: left;
+	top: 15px;
+	left: calc(50% - 0.5px);
+}
+
+.content .timeline .item {
+	width: 100%;
+	float: left;
+	margin-top: -25px;
+}
+
+.content .timeline .item:first-child {
+	margin-top: 0;
+}
+
+.content .timeline .item > .box {
+	position: relative;
+	background: #FFF;
+	width: 317px;
+	float: left;
+	color: #000;
+	border-radius: 3px;
+	transition: 0.5s;
+}
+
+.content .timeline .item:nth-child(2n+1) > .box {
+	padding: 10px 12px 10px 7px;
+	margin-left: 0;
+}
+
+.content .timeline .item:nth-child(2n+1) > .box:hover {
+	margin-left: -10px;
+}
+
+.content .timeline .item:nth-child(2n+1) > .box:before {
+	content: "";
+	position: absolute;
+	float: right;
+	right: -4px;
+	top: calc(50% - 4px);
+	border-top: 4px solid transparent;
+	border-left: 4px solid #00014F;
+	border-bottom: 4px solid transparent;
+}
+
+.content .timeline .item:nth-child(2n+1) > .box:after {
+	content: "";
+	position: absolute;
+	background: #00014F;
+	width: 6px;
+	height: 100%;
+	float: right;
+	top: 0;
+	right: 0;
+}
+
+.content .timeline .item:nth-child(2n+2) > .box {
+	float: right;
+	padding: 10px 7px 10px 12px;
+	margin-right: 0px;
+}
+
+.content .timeline .item:nth-child(2n+2) > .box:hover {
+	margin-right: -10px;
+}
+
+.content .timeline .item:nth-child(2n+2) > .box:before {
+	content: "";
+	position: absolute;
+	float: left;
+	left: -4px;
+	top: calc(50% - 4px);
+	border-top: 4px solid transparent;
+	border-right: 4px solid #00014F;
+	border-bottom: 4px solid transparent;
+}
+
+.content .timeline .item:nth-child(2n+2) > .box:after {
+	content: "";
+	position: absolute;
+	background: #00014F;
+	width: 6px;
+	height: 100%;
+	float: left;
+	top: 0;
+	left: 0;
+}
+
+.content .timeline .item > .box > .icon {
+	position: absolute;
+	width: 92px;
+	height: 100%;
+	float: left;
+	margin-left: -7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
+	margin-top: -10px;
+}
+
+.content .timeline .item > .box > .icon:before {
+	content: "";
+	position: absolute;
+	background: #000;
+	width: 45px;
+	height: 8px;
+	border-radius: 50%;
+	opacity: 0.15;
+	margin-top: 28px;
+	box-shadow: 0 0 6px 3px #000;
+}
+
+.content .timeline .item > .box > .icon img {
+	max-width: 60px;
+}
+
+.content .timeline .item > .box > .title {
+	width: calc(100% - 92px);
+	float: left;
+	font-size: 16px;
+	font-weight: 500;
+	color: #00014F;
+	padding-right: 8px;
+	margin-left: 85px;
+}
+
+.content .timeline .item > .box > .desc {
+	width: calc(100% - 92px);
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+	color: #555;
+	padding: 0 2px;
+	padding-top: 3px;
+	padding-right: 8px;
+	margin-left: 85px;
+}
+
+.content .timeline .item > .box > .types {
+	width: calc(100% - 85px);
+	float: left;
+	margin-top: 8px;
+	margin-left: 85px;
+}
